@@ -583,6 +583,11 @@
             for(var i=0; i<arr.length; i++){
                 compareArray.push(parseInt(arr[i]));
             }
+            for(var i=0; i<compareArray.length-1; i++){
+                if(compareArray[i] > compareArray[i+1]){
+                    alert('Array must be sorted for Binary Search! Please enter a sorted array.');
+                    return;
+            }
             compareTarget = parseInt(targetInput);
             compareLinearIndex = 0;
             compareBinaryLeft = 0;
@@ -714,4 +719,5 @@
         }
     </script>
 </body>
+
 </html>
